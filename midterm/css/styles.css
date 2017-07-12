@@ -1,0 +1,23 @@
+#container {
+  width: 55%;
+  height: 750px;
+  background-color: black;
+  margin: 0 auto;
+}
+
+#leftAisle {
+  display: inline-block;
+  background-color: red;
+  width: 45%;
+  height: 750px;
+  float: left;
+}
+
+
+#rightAisle {
+  display: inline-block;
+  background-color: red;
+  width: 45%;
+  height: 750px;
+  float: right;
+}
