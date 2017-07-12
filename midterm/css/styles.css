@@ -1,23 +1,16 @@
-#container {
-  width: 55%;
-  height: 750px;
-  background-color: black;
+#carousel {
   margin: 0 auto;
+  width: 75%;
 }
-
-#leftAisle {
-  display: inline-block;
-  background-color: red;
-  width: 45%;
-  height: 750px;
-  float: left;
+h1 {
+  text-align: center;
 }
-
-
-#rightAisle {
-  display: inline-block;
-  background-color: red;
-  width: 45%;
-  height: 750px;
-  float: right;
+#harryPotter {
+  text-align: center;
+}
+#fastFurious {
+  text-align: center;
+}
+#dumbDumber {
+  text-align: center;
 }

@@ -2,23 +2,52 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>The HogCircus Express</title>
+    <title>Theater</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div id = "container">
-      <div id = "leftAisle">
+    <div class="container">
+      <h1>The Movies</h1>
+      <div id="carousel" class="carousel slide" data-ride="carousel">
 
-      </div>
-      <div id = "middleAisle">
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div id="harryPotter" class="item active">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/K1KPcXRMMo4" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div id="fastFurious" class="item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/2TAOizOnNPo" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div id="dumbDumber" class="item">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/MSu25pQ4iFw" frameborder="0" allowfullscreen></iframe>
+          </div>
 
-      </div>
-      <div id = "rightAisle">
+        </div>
 
-      </div>
-    </div>
+          <!-- Controls -->
+        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div> <!-- close carousel -->
+
+    </div> <!-- close container -->
 
     <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
   </body>
 </html>
