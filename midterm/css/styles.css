@@ -69,6 +69,10 @@ body {
   background-color: white;
 }
 
+.selected {
+  background-color: white;
+}
+
 .seatImage {
   display: inline-block;
   width: 100%;
