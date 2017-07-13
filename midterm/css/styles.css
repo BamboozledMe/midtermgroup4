@@ -21,8 +21,17 @@ h1 {
   bottom: 200px;
   left: 50px;
   width: 220px;
-  height: 5%;
+  height: 50px;
 }
+
+#deselectButton {
+  position: relative;
+  bottom: 200px;
+  left: 50px;
+  width: 220px;
+  height: 50px;
+}
+
 body {
   background-image: url('slides4.jpg');
   background-size: cover;
@@ -38,6 +47,13 @@ body {
   margin-top: 20px;
 }
 
+.buttonsContainer {
+  position: relative;
+  width: 220px;
+  height: 100px;
+  float: right;
+  right: 100px;
+}
 .row {
   width: 100%;
   height: 87.5px;
