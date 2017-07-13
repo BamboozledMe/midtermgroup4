@@ -18,54 +18,75 @@ h1 {
 #reserveButton {
   position: relative;
   bottom: 200px;
-  left: 50px;
-  width: 220px;
-  height: 50px;
+  width: 100%;
+  height: 50%;
+  font-size: 1em;
 }
 
 #deselectButton {
   position: relative;
   bottom: 200px;
-  left: 50px;
-  width: 220px;
-  height: 50px;
+  width: 100%;
+  height: 50%;
 }
 
 body {
+  background-color: black;
   background-image: url('../images/slides4.jpg');
-  background-size: cover;
+  background-size: 100% 60%;
   background-repeat: no-repeat;
+}
+
+.floor {
+  background-color: black;
+  height: 50%;
+  width: 100%;
+  padding: 50px;
 }
 
 .containerSeats {
   width: 50%;
-  height: 350px;
+  height: 30%;
   background-color: black;
   position: static;
   margin: 0 auto;
-  margin-top: 20px;
+
 }
 
 .buttonsContainer {
   position: relative;
-  width: 220px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30%;
   height: 100px;
-  float: right;
-  right: 100px;
+  top: 200px;
 }
+
 .row {
   width: 100%;
-  height: 87.5px;
   left: 2%;
   margin: 0;
 }
 
-.col-lg-2 {
+.col-lg-2 .col-md-2 .col-sm-2 .col-xs-2{
   width: 16.6666666666667%;
   height: 87.5px;
 }
 
 .col-lg-2:hover {
+  background-color: white;
+}
+
+.col-md-2:hover {
+  background-color: white;
+}
+
+.col-sm-2:hover {
+  background-color: white;
+}
+
+.col-xs-2:hover {
   background-color: white;
 }
 
@@ -79,10 +100,6 @@ body {
   height: 100%;
 }
 
-.reservedSeat {
-  
-}
-
 .reservePopup {
   width: 30%;
   height: 500px;
@@ -91,4 +108,40 @@ body {
   z-index: 2;
   left: 35%;
   top: 100px;
+}
+
+
+
+
+/* media queries */
+
+@media only screen and (max-width: 600px) {
+  .seatImage {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+  }
+  .containerSeats {
+    width: 100%;
+    height: 30%;
+    background-color: black;
+    position: static;
+    margin: 0 auto;
+  }
+
+  .buttonsContainer {
+    width: 100%;
+    float: left;
+  }
+  #carousel {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 990px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
 }
