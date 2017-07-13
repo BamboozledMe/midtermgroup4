@@ -15,6 +15,14 @@ h1 {
 #dumbDumber {
   text-align: center;
 }
+
+#reserveButton {
+  position: relative;
+  bottom: 200px;
+  left: 50px;
+  width: 220px;
+  height: 5%;
+}
 body {
   background-image: url('slides4.jpg');
   background-size: cover;
@@ -25,7 +33,41 @@ body {
   width: 50%;
   height: 350px;
   background-color: rgb(24, 56, 109);
-  position: relative;
+  position: static;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+.row {
+  width: 100%;
+  height: 87.5px;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: yellow;
+  left: 2%;
+  margin: 0;
+}
+
+.col-lg-2 {
+  width: 16.6666666666667%;
+  height: 87.5px;
+  border-width: 1px;
+  border-style: dotted;
+  border-color: red;
+}
+
+.seatImage {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.reservePopup {
+  width: 30%;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  z-index: 2;
+  left: 35%;
+  top: 100px;
 }
