@@ -32,7 +32,7 @@ h1 {
 }
 
 body {
-  background-image: url('slides4.jpg');
+  background-image: url('../images/slides4.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -77,6 +77,10 @@ body {
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+
+.reservedSeat {
+  
 }
 
 .reservePopup {

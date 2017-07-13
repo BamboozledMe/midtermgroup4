@@ -7,7 +7,11 @@ $(function (){
   });
 
   $('.col-lg-2').on('click', function (){
-    $(this).toggleClass('selected');
+    if($(this).hasClass("reservedSeat")){
+
+    } else {
+      $(this).toggleClass('selected');
+    }
 
   });
 
@@ -16,6 +20,30 @@ $(function (){
       $(this).removeClass("selected");
     });
   });
+
+  $('#submitReservation').on('click', function(){
+    $('.selected').each(function(){
+      reservedSeats.push(new reservedSeat($("#firstName").val(),
+      $("#lastName").val(), $("#email").val(), $("#phoneNumber").val(), $(this).attr("id")));
+      $(this).removeClass('selected').addClass("reservedSeat");
+      $(this).html('<img src="images/seat2.png" class="seatImage">');
+
+    });
+
+    $(".form-control").val('');
+
+
+  });
+
+  class reservedSeat {
+    constructor(first, last, email, phone, seatID) {
+      this.firstName = first;
+      this.lastName = last;
+      this.phoneNumber = phone;
+      this.emailAddress = email;
+      this.seatNum = seatID;
+    }
+  }
 
 
 });
