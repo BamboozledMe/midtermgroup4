@@ -1,10 +1,20 @@
 #carousel {
   margin: 0 auto;
   width: 75%;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
-h1 {
+h1, h2{
   text-align: center;
+  color: gold;
+  font-size: 40px;
+  font-family: 'Monoton', cursive;
 }
+
+h2{
+  font-size: 25px;
+}
+
 #harryPotter {
   text-align: center;
 }
@@ -60,7 +70,7 @@ body {
   margin-bottom: 10px;
   width: 30%;
   height: 100px;
-  top: 200px;
+  top: 220px;
 }
 
 .row {
