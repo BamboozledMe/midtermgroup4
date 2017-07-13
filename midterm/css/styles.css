@@ -20,3 +20,12 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.containerSeats {
+  width: 50%;
+  height: 350px;
+  background-color: rgb(24, 56, 109);
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+}
