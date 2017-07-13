@@ -25,7 +25,9 @@ $(function (){
     $('.selected').each(function(){
       reservedSeats.push(new reservedSeat($("#firstName").val(),
       $("#lastName").val(), $("#email").val(), $("#phoneNumber").val(), $(this).attr("id")));
-      $(this).removeClass('selected').addClass("reservedSeat");
+      $(this).removeClass('selected').addClass("reservedSeat").attr("data-toggle", "tooltip").
+      attr("title", "Reserved By " + $("#firstName").val() + " " + $("#lastName").val() + "\nPhone Number: "
+    + $("#phoneNumber").val() + "\nEmail Address: " + $("#email").val());
       $(this).html('<img src="images/seat2.png" class="seatImage">');
 
     });
