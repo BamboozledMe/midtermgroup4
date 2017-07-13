@@ -1,7 +1,7 @@
 #carousel {
   margin: 0 auto;
-  width: 60%;
-  margin-top: 20px;
+  width: 100%;
+  margin-top: 200px;
   margin-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
@@ -10,7 +10,7 @@
 h1, h2{
   text-align: center;
   color: gold;
-  font-size: 40px;
+  font-size: 50px;
   font-family: 'Monoton', cursive;
 }
 
