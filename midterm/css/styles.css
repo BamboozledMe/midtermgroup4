@@ -4,6 +4,7 @@
 }
 h1 {
   text-align: center;
+
 }
 #harryPotter {
   text-align: center;
@@ -13,4 +14,9 @@ h1 {
 }
 #dumbDumber {
   text-align: center;
+}
+body {
+  background-image: url('slides4.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
