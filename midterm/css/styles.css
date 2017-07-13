@@ -4,7 +4,6 @@
 }
 h1 {
   text-align: center;
-
 }
 #harryPotter {
   text-align: center;
@@ -41,7 +40,7 @@ body {
 .containerSeats {
   width: 50%;
   height: 350px;
-  background-color: rgb(24, 56, 109);
+  background-color: black;
   position: static;
   margin: 0 auto;
   margin-top: 20px;
@@ -57,9 +56,6 @@ body {
 .row {
   width: 100%;
   height: 87.5px;
-  border-width: 1px;
-  border-style: dotted;
-  border-color: yellow;
   left: 2%;
   margin: 0;
 }
@@ -67,9 +63,10 @@ body {
 .col-lg-2 {
   width: 16.6666666666667%;
   height: 87.5px;
-  border-width: 1px;
-  border-style: dotted;
-  border-color: red;
+}
+
+.col-lg-2:hover {
+  background-color: white;
 }
 
 .seatImage {
