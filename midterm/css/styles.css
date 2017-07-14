@@ -57,6 +57,12 @@ body {
 }
 
 .floor {
+  border-top: 8px;
+  border-bottom: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-style: ridge;
+  border-color: gold;
   background-color: black;
   height: 50%;
   width: 100%;
