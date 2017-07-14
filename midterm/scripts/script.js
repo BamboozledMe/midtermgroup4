@@ -17,9 +17,6 @@ $(function (){
   }
 
 
-
-
-
   $(".col-lg-2").each(function(index) {
     $(this).attr("id", "seat" + index);
   });
@@ -77,6 +74,7 @@ $(function (){
 
     if (allReserved) {
       $("#selectYourSeat").text("Theatre*Is*Packed*Bye*Felicia");
+      $("#selectYourSeat").addClass("byeFelicia");
       $("#deselectButton").hide();
       console.log("haha");
     }

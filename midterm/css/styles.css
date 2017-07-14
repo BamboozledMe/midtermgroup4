@@ -7,6 +7,7 @@
   padding-right: 50px;
 }
 
+/* Headers */
 h1, h2{
   text-align: center;
   color: gold;
@@ -19,6 +20,7 @@ h2{
   margin-bottom: 20px;
 }
 
+/* Videos */
 #harryPotter {
   text-align: center;
 }
@@ -29,6 +31,8 @@ h2{
   text-align: center;
 }
 
+
+/* Buttons */
 #reserveButton {
   position: relative;
   bottom: 200px;
@@ -39,8 +43,6 @@ h2{
   float: left;
 
 }
-
-
 
 #deselectButton {
   position: relative;
@@ -54,6 +56,7 @@ h2{
   float:right;
 }
 
+ /*body*/
 body {
   background-color: black;
   background-image: url('../images/slides4.jpg');
@@ -74,6 +77,35 @@ body {
   padding: 50px;
 }
 
+ /*Legend*/
+.legend {
+  background-color: gray;
+  width: 35%;
+  height: 90px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+}
+
+.legendSeat {
+  height: 55px;
+  width: 15%;
+  padding-left: 10px;
+  margin: 15px 10px 15px 0px;
+}
+
+.legendSpan {
+  color: white;
+  font-size: 1.15em;
+  height: 80px;
+  width: 49%;
+  padding-top: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+/*Side Popcorns*/
 .leftPopcorn {
   position: absolute;
   width: 15%;
@@ -87,6 +119,8 @@ body {
   left: 80%;
   top: 800px;
 }
+
+/*Container for the seats*/
 .containerSeats {
   width: 50%;
   height: 30%;
@@ -96,6 +130,7 @@ body {
 
 }
 
+/*Container for the buttons*/
 .buttonsContainer {
   position: relative;
   margin: 0 auto;
@@ -106,10 +141,32 @@ body {
   top: 220px;
 }
 
+/*Movie ticket buttons*/
 button img {
   width: 70%;
 }
 
+button:focus{
+  outline: 0;
+}
+
+#deselectButton img {
+  transition: 0.5s all;
+}
+
+#deselectButton img:hover {
+  opacity: 0.5;
+}
+
+#reserveButton img {
+  transition: 0.5s all;
+}
+
+#reserveButton img:hover {
+  opacity: 0.5;
+}
+
+/*Bootstrap grid*/
 .row {
   width: 100%;
   left: 2%;
@@ -118,6 +175,8 @@ button img {
 
 .col-lg-2 {
   border-radius: 8px;
+  cursor: pointer;
+  transition: 0.6s;
 }
 
 .col-lg-2:hover {
@@ -136,8 +195,12 @@ button img {
   background-color: white;
 }
 
-.selected {
-  background-color: white;
+.col-lg-2 img {
+  transition: 0.5s all;
+}
+
+.col-lg-2 img:hover {
+  opacity: 0.2;
 }
 
 .seatImage {
@@ -146,6 +209,12 @@ button img {
   height: 100%;
 }
 
+/*Applied when selected*/
+.selected {
+  background-color: white;
+}
+
+/*Pop up after clicking reserve (The modal)*/
 .reservePopup {
   width: 30%;
   height: 500px;
@@ -156,18 +225,15 @@ button img {
   top: 100px;
 }
 
-.glyphicon {
-  margin-left: 10px;
-  margin-right: 10px;
-  top: 2px;
-}
-
 .input-group {
   margin-top: 5px;
 }
 
-button:focus{
-  outline: 0;
+/*The down arrows*/
+.glyphicon {
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 2px;
 }
 
 /* unvisited link */
@@ -232,6 +298,51 @@ h2 {
     display: none;
   }
 
+
+
+  .byeFelicia {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .legend {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .legend {
+    width: 30%;
+    height: 100px;
+  }
+
+  .legendSpan {
+    display: inline-block;
+    position: relative;
+    height: 40px;
+    width: 70%;
+    margin-bottom: 0px;
+    top: 8px;
+  }
+
+  .legendSeat {
+    height: 30px;
+    width: 20%;
+    margin-bottom: 0px;
+
+  }
+  #legendReserved {
+
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  .legend {
+    height: 100px;
+    width: 50%;
+  }
+
   .leftPopcorn {
     display: none;
   }
@@ -241,13 +352,23 @@ h2 {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .legend {
+    width: 70%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+}
+
 @media only screen and (min-width: 600px) {
   .col-sm-2 {
-    padding: 10px;
+    padding: 12px;
   }
 
 
 }
+
+
 
 @media only screen and (min-width: 1200px) {
 

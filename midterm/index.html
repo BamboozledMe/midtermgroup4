@@ -1,192 +1,244 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Theater</title>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Uptown Theater</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <h1 id= 'top'>The Uptown Theater</h1>
-    <div class="containerTrailers">
-      <div id="carousel" class="carousel slide" data-interval= 'false' data-ride="carousel">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div id="harryPotter" class="item active">
-            <iframe width="760" height="315" src="https://www.youtube.com/embed/K1KPcXRMMo4" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div id="fastFurious" class="item">
-              <iframe width="760" height="315" src="https://www.youtube.com/embed/2TAOizOnNPo" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <div id="dumbDumber" class="item">
-              <iframe width="760" height="315" src="https://www.youtube.com/embed/MSu25pQ4iFw" frameborder="0" allowfullscreen></iframe>
-          </div>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 
+  <!-- Title Icon -->
+  <link rel="shortcut icon" type="image/x-icon" href="images/popcorn.png" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+
+<body>
+  <!-- Header -->
+  <h1 id= 'top'>The Uptown Theater</h1>
+
+  <!-- Trailer carousel container from bootstrap -->
+  <div class="containerTrailers">
+    <div id="carousel" class="carousel slide" data-interval= 'false' data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div id="harryPotter" class="item active">
+          <iframe width="760" height="315" src="https://www.youtube.com/embed/K1KPcXRMMo4" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="fastFurious" class="item">
+          <iframe width="760" height="315" src="https://www.youtube.com/embed/2TAOizOnNPo" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div id="dumbDumber" class="item">
+          <iframe width="760" height="315" src="https://www.youtube.com/embed/MSu25pQ4iFw" frameborder="0" allowfullscreen></iframe>
         </div>
 
-          <!-- Controls -->
-        <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      </div>
 
-      </div> <!-- close carousel -->
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
 
-    </div> <!-- close container -->
+    </div> <!-- close carousel -->
 
-<div class="floor">
+  </div> <!-- close container -->
+
+  <!-- Container for the bottom portion -->
+  <div class="floor">
+    <!-- Popcorn images on the side -->
     <img src = "images/popcorn.png" class = "leftPopcorn">
     <img src = "images/popcorn.png" class = "rightPopcorn">
+
+    <!-- Header for floor (clickable) -->
     <h2  id = "selectYourSeat"><span class = "glyphicon glyphicon-arrow-down"></span> <a href="#bottom">
       Select your seats!  </a><span class = "glyphicon glyphicon-arrow-down"></span></h2>
 
-    <div class = "containerSeats">
+      <!-- Legend for seats -->
+      <div class = "legend">
+        <img src = "images/seat1.png" class = "legendSeat">
+        <span class = "legendSpan">
+          Available Seats
+        </span>
 
-      <div class = "row">
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
+        <img src = "images/seat2.png" class = "legendSeat" id = "legendReserved">
+        <span class = "legendSpan">
+          Reserved Seats
+        </span>
       </div>
 
-      <div class = "row">
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
+      <!-- The Seats -->
+      <div class = "containerSeats">
+
+        <!-- First Row -->
+        <div class = "row">
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
         </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
+
+        <!-- Second Row -->
+        <div class = "row">
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
         </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
+
+        <!-- Third Row -->
+        <div class = "row">
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
         </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
+
+        <!-- Fourth Row -->
+        <div class = "row">
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
+          <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            <img src = "images/seat1.png" class = "seatImage">
+          </div>
         </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
+
       </div>
 
-      <div class = "row">
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-      </div>
+      <!-- The container for reserve and deselect buttons -->
+      <div class = "buttonsContainer">
+        <!-- Button trigger modal -->
+        <button type="button" id='reserveButton' data-toggle="modal" data-target="#myModal">
+          <img src="images/reserveticket.png"/>
+        </button>
 
-      <div class = "row">
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-        <div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">
-          <img src = "images/seat1.png" class = "seatImage">
-        </div>
-      </div>
+        <!-- Modal from bootstrap -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
 
-    </div>
+              <!-- Title of modal -->
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Please enter your information</h4>
+              </div>
 
-    <div class = "buttonsContainer">
-      <!-- Button trigger modal -->
-<button type="button" id='reserveButton' data-toggle="modal" data-target="#myModal">
-  <img src="images/reserveticket.png"/>
-</button>
+              <div class="modal-body">
+                <!-- Input for first name -->
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">First Name</span>
+                  <input id='firstName' type="text" class="form-control" placeholder="First name" aria-describedby="basic-addon1">
+                </div>
+                <!-- Input for last name  -->
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon2">Last Name</span>
+                  <input id= 'lastName' type="text" class="form-control" placeholder="Last name" aria-describedby="basic-addon1">
+                </div>
+                <!-- Input for email address -->
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon3">Email address</span>
+                  <input id='email' type="text" class="form-control" placeholder="Email address" aria-describedby="basic-addon1">
+                </div>
+                <!-- Input for phone number -->
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon4">Phone Number</span>
+                  <input id='phoneNumber' type="text" class="form-control" placeholder="Phone Number" aria-describedby="basic-addon1">
+                </div>
+              </div>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Please enter your information</h4>
+              <!-- Close and reserve buttons -->
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" data-dismiss='modal' id='submitReservation'>Reserve</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deselect all seats Button -->
+        <button type = "button" id = "deselectButton">
+          <img src="images/deselectticket.png"/>
+        </button>
       </div>
-      <div class="modal-body">
-        <div class="input-group">
-          <span class="input-group-addon" id="basic-addon1">First Name</span>
-          <input id='firstName' type="text" class="form-control" placeholder="First name" aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group">
-          <span class="input-group-addon" id="basic-addon2">Last Name</span>
-          <input id= 'lastName' type="text" class="form-control" placeholder="Last name" aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group">
-          <span class="input-group-addon" id="basic-addon3">Email address</span>
-          <input id='email' type="text" class="form-control" placeholder="Email address" aria-describedby="basic-addon1">
-        </div>
-        <div class="input-group">
-          <span class="input-group-addon" id="basic-addon4">Phone Number</span>
-          <input id='phoneNumber' type="text" class="form-control" placeholder="Phone Number" aria-describedby="basic-addon1">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" data-dismiss='modal' id='submitReservation'>Reserve</button>
-      </div>
-    </div>
-  </div>
-</div>
-      <button type = "button" id = "deselectButton">
-        <img src="images/deselectticket.png"/>
-      </button>
-    </div>
-</div> <!-- Close floor -->
-<p id='bottom'><a href="#top">Back to top</a></p>
+    </div> <!-- Close floor -->
+
+    <!-- Link to go back to top -->
+    <p id='bottom'><a href="#top">Back to top</a></p>
+
+    <!-- JQuery Script -->
     <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- External custom script -->
     <script type="text/javascript" src="scripts/script.js"></script>
   </body>
-</html>
+  </html>
