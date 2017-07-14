@@ -61,6 +61,7 @@ $(function (){
       "\nPhone Number: " + reservedSeats[reservedSeats.length - 1].phoneNumber +
       "\nEmail Address: " + reservedSeats[reservedSeats.length - 1].emailAddress);
 
+
       // Changes the image of available seat into reserved seat
       $(this).html('<img src="images/seat2.png" class="seatImage">');
 
