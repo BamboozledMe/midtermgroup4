@@ -2,6 +2,24 @@ $(function (){
 
   var reservedSeats = [];
 
+  var somethingSelectedGlobal = false;
+  $(".col-lg-2").each(function(index) {
+    if ($(this).hasClass("selected")) {
+      somethingSelectedGlobal = true;
+    }
+  });
+
+  if (!somethingSelectedGlobal) {
+    $("#reserveButton").hide();
+  }
+  else {
+    $("#reserveButton").show();
+  }
+
+
+
+
+
   $(".col-lg-2").each(function(index) {
     $(this).attr("id", "seat" + index);
   });
@@ -11,6 +29,21 @@ $(function (){
 
     } else {
       $(this).toggleClass('selected');
+
+      var somethingSelected = false;
+      $(".col-lg-2").each(function(index) {
+        if ($(this).hasClass("selected")) {
+          somethingSelected = true;
+        }
+      });
+
+      if (!somethingSelected) {
+        $("#reserveButton").hide();
+      }
+      else {
+        $("#reserveButton").show();
+      }
+
     }
 
   });
@@ -19,6 +52,7 @@ $(function (){
     $(".col-lg-2").each(function() {
       $(this).removeClass("selected");
     });
+    $("#reserveButton").hide();
   });
 
   $('#submitReservation').on('click', function(){
@@ -31,11 +65,13 @@ $(function (){
       $(this).html('<img src="images/seat2.png" class="seatImage">');
 
     });
-
     $(".form-control").val('');
-
-
+    $("#reserveButton").hide();
   });
+
+
+
+
 
   class reservedSeat {
     constructor(first, last, email, phone, seatID) {

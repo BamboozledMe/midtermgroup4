@@ -129,6 +129,12 @@ body {
   top: 100px;
 }
 
+.glyphicon {
+  margin-left: 10px;
+  margin-right: 10px;
+  top: 2px;
+}
+
 
 /* media queries */
 
@@ -155,7 +161,10 @@ body {
   }
 }
 
-@media only screen and (min-width: 990px) {
+@media only screen and (min-width: 600px) {
+  .col-sm-2 {
+    padding: 10px;
+  }
 
 }
 
