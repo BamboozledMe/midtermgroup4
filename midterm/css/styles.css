@@ -74,6 +74,19 @@ body {
   padding: 50px;
 }
 
+.leftPopcorn {
+  position: absolute;
+  width: 15%;
+  left: 5%;
+  top: 800px;
+}
+
+.rightPopcorn {
+  position: absolute;
+  width: 15%;
+  left: 80%;
+  top: 800px;
+}
 .containerSeats {
   width: 50%;
   height: 30%;
@@ -216,6 +229,14 @@ h2 {
   }
 
   .glyphicon {
+    display: none;
+  }
+
+  .leftPopcorn {
+    display: none;
+  }
+
+  .rightPopcorn {
     display: none;
   }
 }
