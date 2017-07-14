@@ -88,9 +88,8 @@ body {
   margin: 0;
 }
 
-.col-lg-2 .col-md-2 .col-sm-2 .col-xs-2{
-  width: 16.6666666666667%;
-  height: 87.5px;
+.col-lg-2 {
+  border-radius: 8px;
 }
 
 .col-lg-2:hover {
@@ -135,6 +134,38 @@ body {
   top: 2px;
 }
 
+/* unvisited link */
+a:link {
+    color: gold;
+}
+
+/* visited link */
+a:visited {
+    color: gold;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: red;
+}
+
+h2 {
+  text-decoration: none;
+}
+
+#bottom {
+  text-align: center;
+  text-decoration: none;
+  color: gold;
+  font-size: 20px;
+  font-family: 'Monoton', cursive;
+}
+
 
 /* media queries */
 
@@ -159,12 +190,17 @@ body {
   #carousel {
     display: none;
   }
+
+  .glyphicon {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .col-sm-2 {
     padding: 10px;
   }
+
 
 }
 

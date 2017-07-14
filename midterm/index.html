@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>The Uptown Theater</h1>
+    <h1 id= 'top'>The Uptown Theater</h1>
     <div class="containerTrailers">
       <div id="carousel" class="carousel slide" data-interval= 'false' data-ride="carousel">
 
@@ -46,7 +46,7 @@
     </div> <!-- close container -->
 
 <div class="floor">
-    <h2><span class = "glyphicon glyphicon-arrow-down"></span>   Select your seats!   <span class = "glyphicon glyphicon-arrow-down"></span></h2>
+    <h2><span class = "glyphicon glyphicon-arrow-down"></span> <a href="#bottom">  Select your seats!  </a><span class = "glyphicon glyphicon-arrow-down"></span></h2>
 
     <div class = "containerSeats">
 
@@ -178,6 +178,7 @@
       <button type = "button" id = "deselectButton"> Deselect All </button>
     </div>
 </div> <!-- Close floor -->
+<p id='bottom'><a href="#top">Back to top</a></p>
     <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
