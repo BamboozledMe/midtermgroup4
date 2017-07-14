@@ -67,6 +67,19 @@ $(function (){
     });
     $(".form-control").val('');
     $("#reserveButton").hide();
+
+    var allReserved = true;
+    $(".col-lg-2").each(function() {
+      if (!$(this).hasClass("reservedSeat")){
+        allReserved = false;
+      }
+    });
+
+    if (allReserved) {
+      $("#selectYourSeat").text("Theatre*Is*Packed*Bye*Felicia");
+      $("#deselectButton").hide();
+      console.log("haha");
+    }
   });
 
 

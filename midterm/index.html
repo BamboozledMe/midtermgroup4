@@ -46,7 +46,8 @@
     </div> <!-- close container -->
 
 <div class="floor">
-    <h2><span class = "glyphicon glyphicon-arrow-down"></span> <a href="#bottom">  Select your seats!  </a><span class = "glyphicon glyphicon-arrow-down"></span></h2>
+    <h2  id = "selectYourSeat"><span class = "glyphicon glyphicon-arrow-down"></span> <a href="#bottom">
+      Select your seats!  </a><span class = "glyphicon glyphicon-arrow-down"></span></h2>
 
     <div class = "containerSeats">
 
@@ -138,8 +139,8 @@
 
     <div class = "buttonsContainer">
       <!-- Button trigger modal -->
-<button type="button" id='reserveButton' class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Reserve
+<button type="button" id='reserveButton' data-toggle="modal" data-target="#myModal">
+  <img src="images/reserveticket.png"/>
 </button>
 
 <!-- Modal -->
@@ -175,7 +176,9 @@
     </div>
   </div>
 </div>
-      <button type = "button" id = "deselectButton"> Deselect All </button>
+      <button type = "button" id = "deselectButton">
+        <img src="images/deselectticket.png"/>
+      </button>
     </div>
 </div> <!-- Close floor -->
 <p id='bottom'><a href="#top">Back to top</a></p>

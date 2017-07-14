@@ -32,21 +32,26 @@ h2{
 #reserveButton {
   position: relative;
   bottom: 200px;
-  width: 100%;
-  height: 50%;
-  font-size: 1em;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  border: none;
+  float: left;
 
 }
+
+
 
 #deselectButton {
   position: relative;
   bottom: 200px;
-  width: 100%;
-  height: 50%;
-  background-color: red;
+  width: 50%;
+  height: 100%;
+  background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
+  float:right;
 }
 
 body {
@@ -83,9 +88,13 @@ body {
   margin: 0 auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 30%;
-  height: 100px;
+  width: 40%;
+  height: 115px;
   top: 220px;
+}
+
+button img {
+  width: 70%;
 }
 
 .row {
@@ -140,6 +149,14 @@ body {
   top: 2px;
 }
 
+.input-group {
+  margin-top: 5px;
+}
+
+button:focus{
+  outline: 0;
+}
+
 /* unvisited link */
 a:link {
     color: gold;
@@ -183,16 +200,17 @@ h2 {
   }
   .containerSeats {
     width: 100%;
-    height: 30%;
+    height: 100%;
     background-color: black;
     position: static;
     margin: 0 auto;
   }
-
   .buttonsContainer {
-    width: 100%;
-    float: left;
+    height: 75px;
+    width: 300px;
   }
+
+
   #carousel {
     display: none;
   }
