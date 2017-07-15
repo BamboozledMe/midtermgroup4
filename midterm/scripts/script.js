@@ -1,6 +1,6 @@
 $(function (){
 
-  // Initialize empty erray for seats that are reserved. Should include first name,
+  // Initialize empty array for seats that are reserved. Should include first name,
   // last name, email address, phone number, seat ID
   var reservedSeats = [];
 
