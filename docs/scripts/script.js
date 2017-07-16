@@ -50,7 +50,7 @@ $(function (){
 
       // Pushes an object of reserved seat into "reservedSeats" array
       reservedSeats.push(new reservedSeat($("#firstName").val(),
-      $("#lastName").val(), $("#email").val(), $("#phoneNumber").val(), $(this).attr("id")));
+      $("#lastName").val(), $("#email").val(), $("#phoneNumber").val()));
 
       // Removes the class of "selected" and adds class of "reservedSeat" in seat to make
       // the seat no longer clickable. Displays tooltip on hover and make it so that it displays the
